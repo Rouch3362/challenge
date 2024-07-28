@@ -1,0 +1,22 @@
+{% include 'main.html' %}
+
+
+{% block content %}
+
+
+<section>
+    <table border="1">
+        {% for brand in brands %}
+            <tr>
+                <td>{{ brand.id }}</td>
+                <td>{{ brand.name }}</td>
+                <td>{{ brand.region.name }}</td>
+                <td>{{ brand.created_at }}</td>
+            </tr>
+            
+        {% endfor %}
+    </table>
+</section>
+
+
+{% endblock content %}
