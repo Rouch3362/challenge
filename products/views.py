@@ -33,7 +33,7 @@ def getPhones(request):
     brandQueryParam = request.GET.get("brand")
     regionQueryParam = request.GET.get("region")
     # is for filtering the products that their region is same as their brand region
-    isSameRegion = request.GET.get("same-region")
+    isSameRegion = request.GET.get("same_region")
     # getting all objects in database
     phones = Phone.objects.all()
 
