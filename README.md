@@ -1,5 +1,16 @@
 # Mobile Shop
 
+## suggestion for project features
+
+* #### updating status (availability) of products.
+* #### deleting products.
+* #### discounting on products.
+* #### rating for products.
+* #### sorting based on price, popularity, count etc.
+* #### most sold phones in last month or year.
+
+
+## Project Paths
 
 ### Creating New Brand
 
@@ -35,3 +46,4 @@ GET /products
 | `brand` | `string` | filtering based on phone brand name |
 | `region` | `string` | filtering based on phone region |
 | `same_region` | `bool` | returns if phone region and brand region are the same |
+
