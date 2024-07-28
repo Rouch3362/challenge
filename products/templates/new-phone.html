@@ -1,0 +1,15 @@
+{% include 'main.html' %}
+
+{% block content %}
+
+<h1>This is phone page</h1>
+
+
+<form method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="Create">
+</form>
+
+
+{% endblock content %}

@@ -1,0 +1,39 @@
+{% include 'main.html' %}
+
+
+{% block content %}
+
+
+<section>
+    <table border="1">
+        <th>id</th>
+        <th>brand</th>
+        <th>brand region</th>
+        <th>model</th>
+        <th>price</th>
+        <th>color</th>
+        <th>screen size</th>
+        <th>is available</th>
+        <th>count</th>
+        <th>made in</th>
+        {% for phone in phones %}
+            
+            <tr>
+                <td>{{ phone.id }}</td>
+                <td>{{ phone.brand }}</td>
+                <td>{{ phone.brand.region.name }}</td>
+                <td>{{ phone.model }}</td>
+                <td>{{ phone.price }}</td>
+                <td>{{ phone.color }}</td>
+                <td>{{ phone.screen_size }}</td>
+                <td>{{ phone.is_available }}</td>
+                <td>{{ phone.count }}</td>
+                <td>{{ phone.region.name }}</td>
+            </tr>
+            
+        {% endfor %}
+    </table>
+</section>
+
+
+{% endblock content %}
