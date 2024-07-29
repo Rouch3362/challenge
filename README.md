@@ -8,6 +8,7 @@
 * #### rating for products.
 * #### sorting based on price, popularity, count etc.
 * #### most sold phones in last month or year.
+* #### add a field in database that, phone is used or it's new.
 
 
 ## Project Paths
